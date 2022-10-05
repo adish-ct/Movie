@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="POST" >
+    {% csrf_token %}
+    <div class="col-md-9" style="text-align: center;">
+
+        Are you sure to delete the movie<br>
+        <div class="btn btn-primary">
+            <input type="submit" name="submit">
+        </div>
+    </div>
+</form>
+
+{% endblock %}
